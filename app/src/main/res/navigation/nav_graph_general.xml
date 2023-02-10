@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_genereal"
+    app:startDestination="@id/fakeStartFragment">
+
+    <fragment
+        android:id="@+id/fakeStartFragment"
+        android:name="com.appointmate.base.fragments.FakeFragment"
+        android:label="" />
+
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.appointmate.home.MenuMainTabFragment"
+        android:label="MenuFragment" />
+
+    <action
+        android:id="@+id/action_global_menuFragment"
+        app:destination="@id/menuFragment" />
+
+    <fragment
+        android:id="@+id/fragment1"
+        android:name="com.appointmate.barberqueuelist.BarberQueueFragment"
+        android:label="fragment1" />
+
+    <action
+        android:id="@+id/action_global_fragment1"
+        app:destination="@id/fragment1" />
+
+    <fragment
+        android:id="@+id/fragment2"
+        android:name="com.appointmate.home.Fragment2MainTab"
+        android:label="fragment2"
+        />
+
+    <action
+        android:id="@+id/action_global_fragment2"
+        app:destination="@id/fragment2" />
+
+    <fragment
+        android:id="@+id/fragment3"
+        android:name="com.appointmate.home.Fragment3MainTab"
+        android:label="fragment3"
+        />
+
+    <action
+        android:id="@+id/action_global_fragment3"
+        app:destination="@id/fragment3" />
+
+
+<!--    <fragment-->
+<!--        android:id="@+id/tournamentDetailsFragment"-->
+<!--        android:label="TournamentDetailsFragment"-->
+<!--        android:name="com.betconstruct.belotelight.tournament.details.TournamentDetailsFragment"-->
+<!--        tools:layout="@layout/fragment_tournament_details" >-->
+<!--        <argument-->
+<!--            android:defaultValue="@null"-->
+<!--            android:name="tournament"-->
+<!--            app:nullable="true"-->
+<!--            app:argType="com.belote.net.TournamentItemDto" />-->
+<!--    </fragment>-->
+
+<!--    <action-->
+<!--        android:id="@+id/action_global_tournamentDetailsFragment"-->
+<!--        app:destination="@id/tournamentDetailsFragment" />-->
+
+</navigation>

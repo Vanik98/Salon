@@ -7,4 +7,29 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!-- Global colors -->
+    <color name="color_1">#FFFFFF</color>
+    <color name="color_1_2">#DEFFFFFF</color>
+    <color name="color_1_3">#7b8191</color>
+    <color name="color_1_4">#887b90</color>
+    <color name="color_1_5">#807b8191</color>
+    <color name="color_1_7">#DEE4E4E4</color>
+    <color name="color_1_10">#DE000000</color>
+    <color name="color_2">#e8044a</color>
+    <color name="color_2_2">#a71f67</color>
+    <color name="color_2_1">#e9044a</color>
+    <color name="color_3">#008d47</color>
+    <color name="color_3_1">#018845</color>
+    <color name="color_3_3">#8036835C</color>
+    <color name="color_4_1">#7677E5</color>
+    <color name="color_4_7">#222632</color>
+    <color name="color_4_9">#212532</color>
+    <color name="color_4_10">#000c24</color>
+    <color name="color_5">#cddb38</color>
+    <color name="color_5_8">#C98402</color>
+    <!-- end Global colors -->
+
+    <!--     Main page      -->
+    <!--     Main page end     -->
 </resources>

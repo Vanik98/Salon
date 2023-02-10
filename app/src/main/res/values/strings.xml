@@ -2,4 +2,26 @@
     <string name="app_name">Salon</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="salon">Salon</string>
+    <string name="number_1">1</string>
+    <string name="number_2">2</string>
+    <string name="number_3">3</string>
+    <string name="number_4">4</string>
+    <string name="number_5">5</string>
+    <string name="number_6">6</string>
+    <string name="number_7">7</string>
+    <string name="number_9">9</string>
+    <string name="number_8">8</string>
+    <string name="number_0">0</string>
+    <string name="confirm">Confirm</string>
+    <string name="global_resend_code">Resend code</string>
+    <string name="verify">Verify</string>
+    <string name="global_delete_number">delete number</string>
+    <string name="global_application_icon">application icon</string>
+    <string name="global_enter_mobile_number">Enter mobile number</string>
+    <string name="privacy_policy">privacy_policy</string>
+    <string name="navigationMenu_1">1</string>
+    <string name="navigationMenu_2">2</string>
+    <string name="navigationMenu_3">3</string>
+    <string name="navigationMenu_menu">menu</string>
 </resources>

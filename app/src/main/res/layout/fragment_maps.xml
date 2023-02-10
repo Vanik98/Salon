@@ -3,12 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.main.MainActivity">
+    tools:context="com.appointmate.main.MainActivity">
 
     <fragment
         android:id="@+id/map"
         android:name="com.google.android.gms.maps.SupportMapFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context="com.example.map.MapsFragment" />
+        tools:context="com.appointmate.map.MapsFragment" />
 </androidx.constraintlayout.widget.ConstraintLayout>

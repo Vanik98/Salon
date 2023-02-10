@@ -2,7 +2,6 @@ plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
     id 'com.google.android.libraries.mapsplatform.secrets-gradle-plugin'
-    id 'org.jetbrains.kotlin.plugin.serialization' version '1.7.20'
 }
 
 android {
@@ -37,21 +36,22 @@ android {
     }
 }
 
-apply plugin: 'kotlin-kapt'
-
 dependencies {
+    implementation project(path: ':common')
+    implementation project(path: ':login')
+    implementation project(path: ':customer')
+
     implementation kotlinDependencies.values()
     implementation uiDependencies.values()
     //
-    implementation kotlinxSerializationDependencie.values()
-    implementation coroutinesDependencies.values()
-    implementation architectureComponentsDependencies.values()
-    implementation roomDependencies.get("room")
-    kapt roomDependencies.get("roomCompiler")
-    implementation koinDependencies.values()
+
     implementation glideDependencies.get("glide")
+    implementation 'androidx.appcompat:appcompat:1.6.0'
+    implementation 'com.google.android.material:material:1.4.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.navigation:navigation-runtime-ktx:2.5.3'
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.5.3'
     annotationProcessor glideDependencies.get("glideCompiler")
-    implementation retrofitDependencies.values()
 
     implementation 'com.google.android.gms:play-services-maps:18.1.0'
 //    implementation 'com.github.blackfizz:eazegraph:1.2.5l@aar'
