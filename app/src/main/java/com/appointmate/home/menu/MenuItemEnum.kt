@@ -14,6 +14,6 @@ enum class MenuItemEnum(
         private val MAP: Map<String, MenuItemEnum> = values().associateBy(MenuItemEnum::key)
 
         @JvmStatic
-        fun from(key: String?) = MAP[key]
+        fun from(key: String) = MAP[key]
     }
 }

@@ -21,7 +21,7 @@
 
     <fragment
         android:id="@+id/fragment1"
-        android:name="com.appointmate.home.barberqueuelist.BarberQueueFragment"
+        android:name="com.appointmate.home.barberqueue.BarberQueueFragment"
         android:label="fragment1" />
 
     <action
@@ -48,8 +48,25 @@
         android:id="@+id/action_global_fragment3"
         app:destination="@id/fragment3" />
 
+    <fragment
+        android:id="@+id/salon_fragment"
+        android:name="com.appointmate.home.salon.SalonFragment"
+        android:label="salon"
+        >
+<!--                <argument-->
+<!--                    android:defaultValue="@null"-->
+<!--                    android:name=""-->
+<!--                    app:nullable="true"-->
+<!--                    app:argType="com.belote.net.TournamentItemDto" />-->
+    </fragment>
 
-<!--    <fragment-->
+    <action
+        android:id="@+id/action_global_salon_fragment"
+        app:destination="@id/salon_fragment" />
+
+
+
+    <!--    <fragment-->
 <!--        android:id="@+id/tournamentDetailsFragment"-->
 <!--        android:label="TournamentDetailsFragment"-->
 <!--        android:name="com.betconstruct.belotelight.tournament.details.TournamentDetailsFragment"-->

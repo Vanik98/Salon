@@ -1,0 +1,98 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="@dimen/_20dp"
+        android:background="@color/white"
+        tools:context="com.appointmate.home.salon.SalonFragment">
+
+
+        <TextView
+            android:id="@+id/register_salon_TextView"
+            android:layout_width="@dimen/_0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="GRANCEL SRAH" />
+
+        <TextView
+            android:id="@+id/salon_name_TextView"
+            android:layout_width="@dimen/_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="76dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.443"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="GRANCEL SRAH" />
+
+        <TextView
+            android:id="@+id/salon_address_TextView"
+            android:layout_width="@dimen/_0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.443"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/map_FragmentContainerView"
+            tools:text="GRANCEL SRAH" />
+
+        <EditText
+            android:id="@+id/salon_name_EditText"
+            android:layout_width="@dimen/_0dp"
+            android:layout_height="wrap_content"
+            android:hint="GRANCEL SRAH"
+            app:layout_constraintEnd_toEndOf="@+id/salon_name_TextView"
+            app:layout_constraintHorizontal_bias="0.443"
+            app:layout_constraintStart_toStartOf="@+id/salon_name_TextView"
+            app:layout_constraintTop_toBottomOf="@+id/salon_name_TextView" />
+
+        <EditText
+            android:id="@+id/salon_address_EditText"
+            android:layout_width="@dimen/_0dp"
+            android:layout_height="wrap_content"
+            android:hint="GRANCEL SRAH"
+            app:layout_constraintEnd_toEndOf="@+id/salon_address_TextView"
+            app:layout_constraintHorizontal_bias="0.443"
+            app:layout_constraintStart_toStartOf="@+id/salon_address_TextView"
+            app:layout_constraintTop_toBottomOf="@+id/salon_address_TextView" />
+
+        <TextView
+            android:id="@+id/map_text_TextView"
+            android:layout_width="@dimen/_0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@+id/salon_name_TextView"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/salon_name_TextView"
+            app:layout_constraintTop_toBottomOf="@+id/salon_name_EditText"
+            tools:text="GRANCEL SRAH" />
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/map_FragmentContainerView"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="@dimen/_0dp"
+            android:layout_height="300dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.188"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/map_text_TextView"
+            tools:layout="@layout/fragment_fake" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

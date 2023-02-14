@@ -3,13 +3,11 @@ package com.appointmate.home
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
-import android.os.PersistableBundle
 import androidx.annotation.IdRes
 import androidx.core.view.isVisible
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.LiveData
 import androidx.navigation.NavController
-import androidx.navigation.findNavController
 import com.appointmate.BaseActivity
 import com.appointmate.base.utils.extentions.setupWithNavController
 import com.example.salon.R

@@ -1,4 +1,4 @@
-package com.appointmate.map
+package com.appointmate.home.salon
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -15,14 +15,14 @@ import com.google.android.gms.maps.model.MapStyleOptions
 import com.google.android.gms.maps.model.Marker
 import com.google.android.gms.maps.model.MarkerOptions
 
-class MapsFragment(val onMapReady: (googleMap: GoogleMap) -> Unit) : Fragment() {
+class SalonFragment : Fragment() {
     private var mapFragment: SupportMapFragment? = null
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        mapFragment = childFragmentManager.findFragmentById(R.id.map) as SupportMapFragment?
+        mapFragment = childFragmentManager.findFragmentById(R.id.map_FragmentContainerView) as SupportMapFragment?
         mapFragment?.getMapAsync { googleMap ->
-            onMapReady(googleMap)
+            addMarker(googleMap,LatLng(33.00,33.00))
             googleMap.setMapStyle(MapStyleOptions.loadRawResourceStyle(requireContext(), R.raw.custom_mup_style))
         }
     }
@@ -32,7 +32,7 @@ class MapsFragment(val onMapReady: (googleMap: GoogleMap) -> Unit) : Fragment() 
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        return inflater.inflate(R.layout.fragment_maps, container, false)
+        return inflater.inflate(R.layout.fragment_salon, container, false)
     }
 
     companion object {

@@ -1,4 +1,4 @@
-package com.appointmate.home.barberqueuelist
+package com.appointmate.home.barberqueue
 
 import com.appointmate.BaseViewModel
 
