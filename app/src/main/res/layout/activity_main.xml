@@ -11,5 +11,42 @@
         android:orientation="vertical"
         tools:context=".ui.login.LoginActivity">
 
+        <include
+            android:id="@+id/include"
+            layout="@layout/view_bottom_rounded"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="@dimen/_0dp"
+            android:layout_height="wrap_content"
+            android:text="077 77 77 77 "
+            android:layout_marginVertical="@dimen/_20dp"
+            android:layout_marginHorizontal="@dimen/_30dp"
+            android:gravity="center_vertical"
+            style="@style/TextStyleNormal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:drawableLeftCompat="@drawable/user"
+            android:drawablePadding="1dp"
+            />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/barbers_RecyclerView"
+            android:layout_width="@dimen/_0dp"
+            android:layout_height="@dimen/_0dp"
+            android:background="@drawable/shape_much_rounded_background"
+            android:backgroundTint="@color/color_1"
+            android:layout_margin="@dimen/_20dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/include">
+
+        </androidx.recyclerview.widget.RecyclerView>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

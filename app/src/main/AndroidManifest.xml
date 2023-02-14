@@ -12,12 +12,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Salon"
         tools:targetApi="31">
-        <activity android:name="com.appointmate.splashscreen.SplashScreenActivity"
+        <activity
+            android:name=".MenuActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.appointmate.base.splashscreen.SplashScreenActivity"
             android:exported="true"
-            android:theme="@style/SplashScreen"
-            >
+            android:theme="@style/SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -37,8 +41,7 @@
 
         <activity
             android:name="com.appointmate.main.MainActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true"></activity>
     </application>
 
 </manifest>

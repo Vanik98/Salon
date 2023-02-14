@@ -12,7 +12,7 @@
 
     <fragment
         android:id="@+id/menuFragment"
-        android:name="com.appointmate.home.MenuMainTabFragment"
+        android:name="com.appointmate.home.menu.MenuMainTabFragment"
         android:label="MenuFragment" />
 
     <action
@@ -21,7 +21,7 @@
 
     <fragment
         android:id="@+id/fragment1"
-        android:name="com.appointmate.barberqueuelist.BarberQueueFragment"
+        android:name="com.appointmate.home.barberqueuelist.BarberQueueFragment"
         android:label="fragment1" />
 
     <action

@@ -1,6 +1,6 @@
 package com.appointmate.main
 
-import androidx.lifecycle.ViewModel
+import com.appointmate.BaseViewModel
 
-class MainViewModel : ViewModel() {
+class MainViewModel : BaseViewModel() {
 }

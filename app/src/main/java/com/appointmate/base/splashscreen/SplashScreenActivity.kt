@@ -1,4 +1,4 @@
-package com.appointmate.splashscreen
+package com.appointmate.base.splashscreen
 
 import android.annotation.SuppressLint
 import android.content.Intent

@@ -40,6 +40,7 @@ dependencies {
     implementation project(path: ':common')
     implementation project(path: ':login')
     implementation project(path: ':customer')
+    implementation project(path: ':barber')
 
     implementation kotlinDependencies.values()
     implementation uiDependencies.values()

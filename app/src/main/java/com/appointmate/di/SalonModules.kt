@@ -1,6 +1,6 @@
 package com.appointmate.di
 
-import com.appointmate.barberqueuelist.BarberQueueViewModel
+import com.appointmate.home.barberqueuelist.BarberQueueViewModel
 import com.appointmate.login.LoginViewModel
 import com.appointmate.main.MainViewModel
 import org.koin.androidx.viewmodel.dsl.viewModel
@@ -25,5 +25,5 @@ private val loginModule = module{
 }
 
 private val barberQueueListModule = module{
-    viewModel{BarberQueueViewModel()}
+    viewModel{ BarberQueueViewModel() }
 }

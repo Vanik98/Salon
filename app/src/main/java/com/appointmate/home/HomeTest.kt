@@ -6,9 +6,8 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.appointmate.analytic.AnalyticFragment
+import com.appointmate.home.analytic.AnalyticFragment
 import com.example.salon.R
-import com.appointmate.salon.Salon
 import com.github.mikephil.charting.charts.PieChart
 import com.github.mikephil.charting.data.PieData
 import com.github.mikephil.charting.data.PieDataSet

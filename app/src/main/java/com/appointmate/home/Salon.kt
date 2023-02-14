@@ -1,4 +1,4 @@
-package com.appointmate.salon
+package com.appointmate.home
 
 import com.google.android.gms.maps.model.LatLng
 

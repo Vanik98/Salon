@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:drawable="@color/color_4_1"/>
     <item>
-        <bitmap android:src="@drawable/salon_logo" android:gravity="center"/>
+        <shape android:shape="rectangle">
+            <gradient
+                android:angle="90"
+                android:endColor="@color/color_4_1"
+                android:startColor="@color/color_2_9" />
+        </shape>
     </item>
     <item>
-        <bitmap android:src="@drawable/salon_text" android:gravity="bottom"/>
+        <bitmap
+            android:gravity="center"
+            android:src="@drawable/salon_logo" />
     </item>
 </layer-list>

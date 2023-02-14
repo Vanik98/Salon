@@ -24,4 +24,6 @@
     <string name="navigationMenu_2">2</string>
     <string name="navigationMenu_3">3</string>
     <string name="navigationMenu_menu">menu</string>
+    <string name="navigationMenu_settings">Settings</string>
+    <string name="navigationMenu_administrator">Administrator</string>
 </resources>

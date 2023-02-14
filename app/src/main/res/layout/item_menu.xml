@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="com.appointmate.home.menu.MenuItemEnum" />
+
+        <variable
+            name="name"
+            type="String" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/text_TextView"
+            style="@style/TextStyleNormal"
+            android:layout_width="@dimen/_0dp"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/_30dp"
+            android:paddingHorizontal="@dimen/_10dp"
+            android:text="@{context.getString(MenuItemEnum.from(name).stringResId)}"
+            android:textColor="@color/black"
+            android:drawableStart="@{context.getDrawable(MenuItemEnum.from(name).iconResId)}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:drawableStart="@drawable/ic_delete"
+            tools:text="Settings"
+            tools:ignore="UseCompatTextViewDrawableXml" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

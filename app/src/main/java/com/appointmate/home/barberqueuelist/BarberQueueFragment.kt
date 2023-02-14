@@ -1,4 +1,4 @@
-package com.appointmate.barberqueuelist
+package com.appointmate.home.barberqueuelist
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -13,8 +13,6 @@ import com.appointmate.base.utils.helper.helper.VerticalSpacesItemDecoration
 import com.appointmate.customer.CustomerDto
 import com.example.salon.R
 import com.example.salon.databinding.FragmentBarberQueueBinding
-import com.github.mikephil.charting.data.PieEntry
-import com.google.android.gms.maps.model.LatLng
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class BarberQueueFragment : BaseFragment() {
@@ -39,10 +37,10 @@ class BarberQueueFragment : BaseFragment() {
     private fun setupViews() {
         val verticalDecoration = VerticalSpacesItemDecoration(SizeUtils.dp2px(requireActivity(), 3f))
         val horizontalDecoration = HorizontalSpacesItemDecoration(SizeUtils.dp2px(requireActivity(), 3f))
-        binding.barberQueueListRecyclerView.addItemDecoration(verticalDecoration)
-        binding.barberQueueListRecyclerView.addItemDecoration(horizontalDecoration)
-        binding.barberQueueListRecyclerView.layoutManager = GridLayoutManager(context, 6,GridLayoutManager.VERTICAL,false)
-        binding.barberQueueListRecyclerView.adapter = adapter
+        binding.queueVisualRecyclerView.addItemDecoration(verticalDecoration)
+        binding.queueVisualRecyclerView.addItemDecoration(horizontalDecoration)
+        binding.queueVisualRecyclerView.layoutManager = GridLayoutManager(context, 6, GridLayoutManager.VERTICAL, false)
+        binding.queueVisualRecyclerView.adapter = adapter
         adapter.updateData(
             arrayListOf(
                 CustomerDto("11:30"),

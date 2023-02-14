@@ -1,4 +1,4 @@
-package com.appointmate.analytic
+package com.appointmate.home.analytic
 
 import android.os.Bundle
 import android.view.View

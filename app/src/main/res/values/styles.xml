@@ -24,6 +24,4 @@
         <item name="maxLines">1</item>
     </style>
 
-    <dimen name="_25sp">25sp</dimen>
-    <dimen name="_20sp">20sp</dimen>
 </resources>

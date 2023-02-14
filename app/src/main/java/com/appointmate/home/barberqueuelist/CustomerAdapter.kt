@@ -1,4 +1,4 @@
-package com.appointmate.barberqueuelist
+package com.appointmate.home.barberqueuelist
 
 import android.annotation.SuppressLint
 import android.content.Context
