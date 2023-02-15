@@ -6,10 +6,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.appointmate.barber.BarberItemDto
-import com.appointmate.customer.CustomerDto
+import com.appointmate.barber.net.BarberItemDto
 import com.example.salon.databinding.ItemBarberBinding
-import com.example.salon.databinding.ItemCoustomerBinding
 import java.util.*
 
 class BarberAdapter(val barberItemClick: (barberItemDto: BarberItemDto) -> Unit) : RecyclerView.Adapter<BarberAdapter.BaseViewHolder>() {

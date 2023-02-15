@@ -6,7 +6,7 @@
     <data>
         <variable
             name="barber"
-            type="com.appointmate.barber.BarberItemDto" />
+            type="com.appointmate.barber.net.BarberItemDto" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

@@ -1,4 +1,4 @@
-package com.appointmate.barber
+package com.appointmate.barber.net
 
 class BarberDto {
 }

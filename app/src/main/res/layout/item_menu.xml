@@ -19,7 +19,7 @@
 
         <TextView
             android:id="@+id/text_TextView"
-            style="@style/TextStyleNormal"
+            style="@style/TextStyleBig"
             android:layout_width="@dimen/_0dp"
             android:layout_height="wrap_content"
             android:drawablePadding="@dimen/_30dp"

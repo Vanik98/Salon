@@ -4,7 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.databinding.DataBindingUtil
 import com.appointmate.BaseActivity
-import com.appointmate.barber.BarberItemDto
+import com.appointmate.barber.net.BarberItemDto
 import com.appointmate.base.utils.SizeUtils
 import com.appointmate.base.utils.helper.helper.VerticalSpacesItemDecoration
 import com.appointmate.home.HomeActivity

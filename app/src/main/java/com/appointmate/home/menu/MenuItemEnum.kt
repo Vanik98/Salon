@@ -8,6 +8,7 @@ enum class MenuItemEnum(
     val iconResId: Int,
 ) {
     SETTINGS("settings", R.string.navigationMenu_settings, R.drawable.ic_delete),
+    BARBER("barber",R.string.navigationMenu_barber,R.drawable.ic_delete),
     ADMINISTRATOR("administrator", R.string.navigationMenu_administrator, R.drawable.ic_delete);
 
     companion object {

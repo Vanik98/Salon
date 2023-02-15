@@ -53,16 +53,24 @@
         android:name="com.appointmate.home.salon.SalonFragment"
         android:label="salon"
         >
-<!--                <argument-->
-<!--                    android:defaultValue="@null"-->
-<!--                    android:name=""-->
-<!--                    app:nullable="true"-->
-<!--                    app:argType="com.belote.net.TournamentItemDto" />-->
     </fragment>
 
     <action
         android:id="@+id/action_global_salon_fragment"
         app:destination="@id/salon_fragment" />
+
+    <fragment
+        android:id="@+id/barber_fragment"
+        android:name="com.appointmate.home.barber.BarberFragment"
+        android:label="barber"
+        >
+    </fragment>
+
+    <action
+        android:id="@+id/action_global_barber_fragment"
+        app:destination="@id/barber_fragment" />
+
+
 
 
 
