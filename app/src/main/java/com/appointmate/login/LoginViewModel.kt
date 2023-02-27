@@ -8,15 +8,15 @@ import com.appointmate.BaseViewModel
 import kotlinx.coroutines.launch
 
 class LoginViewModel(
-    private val sendSmsUseCase: SendSmsUseCase,
+    private val sendSmsShearedUseCase: SendSmsUseCase,
     private val verifyCodeUseCase: VerifyCodeUseCase,
 ) : BaseViewModel() {
-    private var _successCode  = MutableLiveData<Int?>()
+    private val _successCode  = MutableLiveData<Int?>()
     val successCode: LiveData<Int?>
         get() = _successCode
 
     fun sendSms(number:String) {
-        viewModelScope.launch { sendSmsUseCase.sendSms(number) }
+        viewModelScope.launch { sendSmsShearedUseCase.sendSms(number) }
     }
 
     fun verifyCode(code: Int) {

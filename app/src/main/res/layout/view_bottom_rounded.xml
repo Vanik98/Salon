@@ -5,9 +5,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <View
-        android:id="@+id/logo_ConstraintLayout"
+        android:id="@+id/logo_view"
         android:layout_width="@dimen/_0dp"
-        android:layout_height="@dimen/_300dp"
+        android:layout_height="@dimen/_350dp"
         android:background="@drawable/shape_bottom_rounded"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"

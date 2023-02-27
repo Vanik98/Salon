@@ -14,8 +14,8 @@ ext {
             "materialVersion"                      : '1.7.0',
             "constraintLayoutVersion"              : '2.1.4',
             //Koin
-            "koinVersion"                          : '3.2.2',
-            "koinAndroidVersion"                   : '3.3.0',
+            "koinVersion"                          : '3.3.3',
+            "koinAndroidVersion"                   : '3.3.3',
             //Coroutine
             "coroutinesVersion"                    : '1.6.1',
             //Serialization

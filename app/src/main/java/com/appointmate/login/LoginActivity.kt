@@ -1,5 +1,6 @@
 package com.appointmate.login
 
+import android.content.Intent
 import android.content.res.ColorStateList
 import android.os.Bundle
 import android.widget.Toast
@@ -7,13 +8,15 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.core.view.isVisible
 import androidx.databinding.DataBindingUtil
+import com.appointmate.BaseActivity
 import com.appointmate.base.utils.constants.SalonConstants.EMPTY_STRING
+import com.appointmate.home.HomeActivity
 import com.appointmate.login.model.VerifySuccessCodeEnum
 import com.example.salon.R
 import com.example.salon.databinding.ActivityLoginBinding
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
-class LoginActivity : AppCompatActivity() {
+class LoginActivity : BaseActivity() {
     private lateinit var binding: ActivityLoginBinding
     private val viewModel by viewModel<LoginViewModel>()
     private var number = EMPTY_STRING
@@ -49,7 +52,8 @@ class LoginActivity : AppCompatActivity() {
         viewModel.successCode.observe(this) {
             when (VerifySuccessCodeEnum.from(it)) {
                 VerifySuccessCodeEnum.SUCCESSFUL -> {
-                    //TODO: open Home Activity
+                    startActivity(Intent(this,HomeActivity::class.java))
+                    finish()
                 }
                 VerifySuccessCodeEnum.FAILED -> {
                     Toast.makeText(this, "Verify number is wrong", Toast.LENGTH_SHORT).show()
@@ -104,8 +108,6 @@ class LoginActivity : AppCompatActivity() {
     private fun verify() {
         if (verifyNumber.length == 6) {
             viewModel.verifyCode(verifyNumber.toInt())
-        } else {
-
         }
     }
 

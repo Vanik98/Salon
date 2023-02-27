@@ -8,6 +8,7 @@ import com.appointmate.barber.net.BarberItemDto
 import com.appointmate.base.utils.SizeUtils
 import com.appointmate.base.utils.helper.helper.VerticalSpacesItemDecoration
 import com.appointmate.home.HomeActivity
+import com.appointmate.login.LoginActivity
 import com.example.salon.databinding.ActivityMainBinding
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
@@ -16,12 +17,13 @@ class MainActivity : BaseActivity() {
     private val viewModel by viewModel<MainViewModel>()
 
     private val adapter = BarberAdapter {
-        startActivity(Intent(this, HomeActivity::class.java))
+        startActivity(Intent(this, LoginActivity::class.java))
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setupViews()
+
 //        val ft = supportFragmentManager.beginTransaction()
 //        ft.replace(com.example.salon.R.id.main_ConstraintLayout, MapsFragment{})
 //        ft.commit()
